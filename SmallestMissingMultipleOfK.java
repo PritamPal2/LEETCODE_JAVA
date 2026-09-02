@@ -26,8 +26,7 @@ public class SmallestMissingMultipleOfK {
         int[] nums = {10, 25};
         int k = 5;
 
-        SmallestMissingMultipleOfK result =
-                new SmallestMissingMultipleOfK();
+        SmallestMissingMultipleOfK result = new SmallestMissingMultipleOfK();
 
         System.out.println(result.missingMultiple(nums, k));
     }
