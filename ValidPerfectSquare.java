@@ -2,6 +2,7 @@ import java.io.PrintStream;
 
 class ValidPerfectSquare {
     public boolean isPerfectSquare(int num) {
+        // BinarySearch O(logn)
         // if(num == 1) return true;
         // int left = 2;
         // int right = num/2;
@@ -11,6 +12,8 @@ class ValidPerfectSquare {
         //     else if(mid*mid > num) right = mid-1;
         //     else left = mid+1;
         // }
+
+        // Normal Loop O(n)
         long i=1;
         while(i*i <= num) {
             if(i*i == num) return true;
