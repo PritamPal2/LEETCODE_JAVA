@@ -69,7 +69,7 @@ public class LinkedList {
         mylList.display();
 
         System.out.println("\n___Final Output after Delete Node___");
-        deleteNode(mylList.head);
+        LinkedList.deleteNode(mylList.head);
         mylList.display();
 
         sc.close();
