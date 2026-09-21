@@ -3,12 +3,24 @@ class ToeplitzMatrix {
         int rows = matrix.length;
         int cols = matrix[0].length;
 
-        // FORMULA A[i][j] == A[i-1][j-1]
-        for(int i=1;i<rows;i++) {
-            for(int j=1;j<cols;j++) {
-                if(matrix[i][j] != matrix[i-1][j-1]) return false;
+        // // FORMULA A[i][j] == A[i-1][j-1]
+        // for(int i=1;i<rows;i++) {
+        //     for(int j=1;j<cols;j++) {
+        //         if(matrix[i][j] != matrix[i-1][j-1]) return false;
+        //     }
+        // }
+        
+         for (int k = 0; k < rows * cols; k++) {
+            int i = k / cols;  // row
+            int j = k % cols;  // column
+            // Compare with upper-left element
+            if (i > 0 && j > 0) {
+                if (matrix[i][j] != matrix[i - 1][j - 1]) {
+                    return false;
+                }
             }
         }
+        
         return true;
     }
 
