@@ -5,8 +5,8 @@ class ReshapeMatrix {
         int rows = mat.length;
         int cols = mat[0].length;
         // if(rows * cols != r * c) return mat;
-        int a=0;
-        int b=0;
+        // int a=0;
+        // int b=0;
         for(int i=0;i< rows * cols;i++) {
             result[i/c][i%c] = mat[i/cols][i%cols];
             // b++;
