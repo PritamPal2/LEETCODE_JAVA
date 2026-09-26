@@ -15,7 +15,6 @@ class DegreeOfEachVertex {
                 }
             }
             // rowSum[i] = count;
-            
         }
         return rowSum;
     }
